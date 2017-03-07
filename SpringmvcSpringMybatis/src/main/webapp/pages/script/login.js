@@ -47,6 +47,8 @@ $("#btnLogin").click(function() {
 				setLocalStorage("shopInfo", JSON.stringify(res));
 
 				showmsg("恭喜你，登录成功！");
+				
+				window.location.href=ctx + '/success.do';
 
 			} else {
 				showmsg("用户名或密码错误");
@@ -54,3 +56,4 @@ $("#btnLogin").click(function() {
 		}
 	});
 });
+
